@@ -10,7 +10,7 @@
 ## Responsibilities:
 - Manage supplier information.
 - Track and update supplier performance metrics.
-# 4. InventoryDB Class
+# 4. InventoryDB Class (Found in the main folder)
 ## Responsibilities:
 - Handle database connections.
 - Manage CRUD (Create, Read, Update, Delete) operations for products, orders, and suppliers.
