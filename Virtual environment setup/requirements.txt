@@ -1,5 +1,0 @@
-Flask==2.3.0
-Flask-SQLAlchemy==3.0.0
-Dash==2.8.0
-pandas==2.0.3
-Plotly==5.12.0
