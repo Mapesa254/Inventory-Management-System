@@ -1,28 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Admin Menu</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-5">Admin Menu</h1>
-        <a href="{{ url_for('products') }}" class="btn btn-primary mt-3">View Products</a>
-        <a href="{{ url_for('add_product') }}" class="btn btn-primary mt-3">Add Product</a>
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - InventoryLite{% endblock %}
+
+{% block content %}
+<div class="dashboard-hero">
+    <div class="hero-content">
+        <h1 class="page-title">Welcome to InventoryLite</h1>
+        <p class="subtitle">A simple, clean inventory management system.</p>
+        <div class="action-buttons mt-lg">
+            <a href="{{ url_for('products') }}" class="btn btn-secondary btn-lg">View All Products</a>
+            <a href="{{ url_for('add_product') }}" class="btn btn-primary btn-lg">Add New Product</a>
+        </div>
     </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Admin Menu</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-5">Admin Menu</h1>
-        <a href="{{ url_for('products') }}" class="btn btn-primary mt-3">View Products</a>
-        <a href="{{ url_for('add_product') }}" class="btn btn-primary mt-3">Add Product</a>
+</div>
+
+<div class="dashboard-cards mt-lg">
+    <div class="card">
+        <h3>Inventory Tracking</h3>
+        <p>Keep a close eye on your stock levels and product categories with our streamlined list view.</p>
     </div>
-</body>
-</html>
+    <div class="card">
+        <h3>CRUD Operations</h3>
+        <p>Easily Create, Read, Update, and Delete products using the intuitive tools provided.</p>
+    </div>
+</div>
+{% endblock %}
